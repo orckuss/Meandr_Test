@@ -7,4 +7,7 @@ mixin front()
       |  и
       span  саппортов
       |  в команду. Решите на какую категорию вы претендуете.
-    a.btn(href="#") Заполнить анкету
+    a.front__btn.btn(href="#") Заполнить анкету
+    picture
+      source(type="image/webp" srcset="img/front.webp 1x, img/front@2x.webp 2x")
+      img.front__img(src="img/front.jpg" srcset="img/front@2x.jpg 2x" alt="Офис")
