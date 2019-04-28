@@ -2,8 +2,8 @@
   position relative
 
   display inline-block
-  width 54px
   padding-top 18px
+  padding-right 30px
   padding-bottom 16px
   padding-left 46px
 
@@ -16,31 +16,37 @@
   text-transform uppercase
   color #222222
 
-  border-radius 111px
-  background-color rgba(#878787, 0.05)
+  border none
   outline none
 
-  &:hover,
-  &:focus
-    width auto
-    padding-right 30px
-    transition 0.2s
+  &::before
+    content ""
+    position absolute
+    top 20px
+    left 20px
 
-  &:active
-    opacity 0.8
+    width 14px
+    height 14px
 
-  &::before,
+    background-image url("../img/plus.svg")
+
   &::after
     content ""
     position absolute
-    top 26px
-    left 20px
-    z-index -1
+    top 0
+    left 0
 
-    width 14px
-    height 2px
+    width 54px
+    height 54px
 
-    background-color #F47821
+    border-radius 111px
+    background-color rgba(#878787, 0.05)
 
-  &::before
-    transform rotate(90deg)
+  &:hover,
+  &:focus
+    &::after
+      width 100%
+      transition 0.2s
+
+  &:active
+    opacity 0.8
