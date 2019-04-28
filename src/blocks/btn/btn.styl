@@ -1,1 +1,46 @@
-// .btn
+.btn
+  position relative
+
+  display inline-block
+  width 54px
+  padding-top 18px
+  padding-bottom 16px
+  padding-left 46px
+
+  font-family "Gilroy", "Arial", sans-serif
+  font-style normal
+  font-weight 400
+  font-size 16px
+  line-height 20px
+  letter-spacing 0.02em
+  text-transform uppercase
+  color #222222
+
+  border-radius 111px
+  background-color rgba(#878787, 0.05)
+  outline none
+
+  &:hover,
+  &:focus
+    width auto
+    padding-right 30px
+    transition 0.2s
+
+  &:active
+    opacity 0.8
+
+  &::before,
+  &::after
+    content ""
+    position absolute
+    top 26px
+    left 20px
+    z-index -1
+
+    width 14px
+    height 2px
+
+    background-color #F47821
+
+  &::before
+    transform rotate(90deg)
