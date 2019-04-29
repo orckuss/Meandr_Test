@@ -1,0 +1,4 @@
+mixin inputTemp(valClass, valId, valName)
+  label(class=valClass + "__label" for=valId)
+    block
+  input(class=valClass + "__input" id=valId name=valName)&attributes(attributes)
