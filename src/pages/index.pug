@@ -1,11 +1,22 @@
 extends ../templates/template
 block head
-  title title
+  title Meandr_test
+  link(rel="preload" href="fonts/DINPro.woff" as="font")
+  link(rel="preload" href="fonts/Gilroy-Regular.woff" as="font")
+  link(rel="preload" href="fonts/Roboto-Regular.woff" as="font")
+  link(rel="preload" href="fonts/Roboto-Bold.woff" as="font")
+  link(rel="preload" href="fonts/Roboto-Medium.woff" as="font")
   link(rel="preload" href="fonts/DINPro-Bold.woff" as="font")
 
 block content
   +header
 
   main
+    h1.visually-hidden Лендинг Meandr
+    +front()
+    +features()
+    +about()
+    +advantages()
+    +feedback()
 
   +footer
