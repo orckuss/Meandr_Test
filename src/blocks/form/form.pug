@@ -1,2 +1,17 @@
 mixin form()
-  .form&attributes(attributes)
+  form(action="https://echo.htmlacademy.ru" method="post").form&attributes(attributes)
+    ol.form__list
+      li.form__item
+        +inputTemp("form", "name", "name")(placeholder="Сидоров Александр")
+          | Фамилия и имя
+      li.form__item
+        +inputTemp("form", "mail", "mail")(placeholder="Sidorov@yandex.ru")
+          | Электронная почта
+      li.form__item
+        +inputTemp("form", "phone", "phone")(placeholder="+7 (999)-328-14-20")
+          | Телефон
+      li.form__item
+        +inputTemp("form", "job", "job")(placeholder="Свой проект по созданию универсальной инфраструктуры строительства")
+          | Какой деятельностью, не связанной с текущими проектами,
+          |  вы бы хотели заниматься в рабочее время?
+    button.form__btn(type="submit") Отправить
