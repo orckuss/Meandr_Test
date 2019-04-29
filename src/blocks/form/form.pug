@@ -14,5 +14,5 @@ mixin form()
         label.form__label.label(for="job")
           | Какой деятельностью, не связанной с текущими проектами,
           |  вы бы хотели заниматься в рабочее время?
-        textarea#job.form__input.input(name="job" rows="2" placeholder="Свой проект по созданию универсальной инфраструктуры строительства" required)
+        textarea#job.form__input.input.input--textarea(name="job" rows="2" placeholder="Свой проект по созданию универсальной инфраструктуры строительства" required)
     button.form__btn.btn.btn--theme-form.js-submit(type="submit") Отправить
