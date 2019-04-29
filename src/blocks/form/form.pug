@@ -1,17 +1,17 @@
 mixin form()
   form(action="https://echo.htmlacademy.ru" method="post").form&attributes(attributes)
     ol.form__list
-      li.form__item
-        +inputTemp("form", "name", "name")(placeholder="Сидоров Александр")
+      li.form__item.form__item--number-1
+        +inputTemp("form__label label", "name", "name").form__input.input(placeholder="Сидоров Александр")
           | Фамилия и имя
-      li.form__item
-        +inputTemp("form", "mail", "mail")(placeholder="Sidorov@yandex.ru")
+      li.form__item.form__item--number-2
+        +inputTemp("form__label label", "mail", "mail").form__input.input(placeholder="Sidorov@yandex.ru")
           | Электронная почта
-      li.form__item
-        +inputTemp("form", "phone", "phone")(placeholder="+7 (999)-328-14-20")
+      li.form__item.form__item--number-3
+        +inputTemp("form__label label", "phone", "phone").form__input.input(placeholder="+7 (999)-328-14-20")
           | Телефон
-      li.form__item
-        +inputTemp("form", "job", "job")(placeholder="Свой проект по созданию универсальной инфраструктуры строительства")
+      li.form__item.form__item--number-4
+        +inputTemp("form__label label", "job", "job").form__input.input(placeholder="Свой проект по созданию универсальной инфраструктуры строительства")
           | Какой деятельностью, не связанной с текущими проектами,
           |  вы бы хотели заниматься в рабочее время?
-    button.form__btn(type="submit") Отправить
+    button.form__btn.btn.btn--theme-form(type="submit") Отправить
