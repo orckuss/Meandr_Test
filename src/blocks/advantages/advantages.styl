@@ -1,1 +1,69 @@
-// .advantages
+.advantages
+  display flex
+  padding-top 120px
+  padding-bottom 160px
+  flex-direction column
+  align-items center
+
+  background-color #F7F5FA
+
+  &__title
+    margin-top 0
+    margin-bottom 60px
+
+  &__list
+    display flex
+    width 82.7%
+    margin 0
+    margin-left 21px
+    padding 0
+
+    list-style none
+
+  &__item
+    position relative
+
+    width (100% / 3)
+    padding-top 80px
+
+    &::before
+      content ""
+      position absolute
+      top 0
+      left 0
+
+      width 54px
+      height 54px
+
+      background-image url("../img/wallet.svg")
+
+  &__item-title
+    position relative
+
+    margin-top 0
+    margin-bottom 51px
+
+    font-family "DINPro", "Arial", sans-serif
+    font-style normal
+    font-weight 700
+    font-size 20px
+    line-height 25px
+    color #000000
+
+    &::after
+      content ""
+      position absolute
+      bottom -24px
+      left 0
+
+      width 24px
+      height 2px
+
+      background-color #F47821
+
+  &__text
+    width 326px
+    margin 0
+
+    &--width-big
+      width 345px
