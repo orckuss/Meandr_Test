@@ -23,3 +23,56 @@
   .form
     &__list
       margin-bottom 50px
+
+@media (min-width: desktop-width)
+  .form
+    width 574px
+
+    &__list
+      margin-bottom 12px
+
+    &__item
+      position relative
+
+      margin-bottom 48px
+
+      &::before
+        content: ""
+        position absolute
+        top -20px
+        left -92px
+
+        display flex
+        width 64px
+        height 64px
+        justify-content center
+        align-items center
+
+        font-family "Roboto"
+        font-style normal
+        font-weight 500
+        font-size 20px
+        line-height 23px
+        color #F47821
+
+        border 1px solid rgba(#FFFFFF, 0.23)
+        border-radius 50%
+
+      &--number-1
+        &::before
+          content: "1"
+
+      &--number-2
+        &::before
+          content: "2"
+
+      &--number-3
+        &::before
+          content: "3"
+
+      &--number-4
+        &::before
+          content: "4"
+
+    &__label
+      margin-bottom 22.5px

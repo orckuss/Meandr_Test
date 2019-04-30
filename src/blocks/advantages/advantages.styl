@@ -87,3 +87,49 @@
 
       br
         display inline
+
+@media (min-width: desktop-width)
+  .advantages
+    align-items center
+    padding-top 120px
+    padding-right 0
+    padding-bottom 160px
+    padding-left 0
+
+    &__list
+      width 82.7%
+      margin-left 21px
+
+    &__item
+      width (100% / 3)
+
+    &__item-title
+      width auto
+      margin-bottom 51px
+
+      text-align left
+
+      &::before
+        left 0
+
+        transform none
+
+      &::after
+        content ""
+        position absolute
+        bottom -24px
+        left 0
+
+        width 24px
+        height 2px
+
+        background-color #F47821
+
+      br
+        display none
+
+    &__text
+      width 326px
+
+      &--width-big
+        width 345px
