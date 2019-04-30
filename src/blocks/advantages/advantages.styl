@@ -46,7 +46,44 @@
       height 54px
 
       background-image url("../img/wallet.svg")
-      transform translateY(-50%)
+      transform translate(0, -50%)
+
+    br
+      display none
 
   &__text
     margin 0
+
+@media (min-width: tablet-width)
+  .advantages
+    padding-right 30px
+    padding-bottom 40px
+    padding-left 30px
+
+    &__title
+      margin-bottom 60px
+
+    &__list
+      flex-direction row
+      justify-content space-between
+
+    &__item
+      width 30%
+      margin-bottom 0
+
+    &__item-title
+      width 150px
+      margin-bottom 20px
+      padding-top 85px
+      padding-left 0
+
+      text-align center
+
+      &::before
+        top 0
+        left 50%
+
+        transform translate(-50%)
+
+      br
+        display inline
