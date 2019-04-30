@@ -22,8 +22,7 @@
     font-family "DINPro", "Arial", sans-serif
     font-style normal
     font-weight 400
-    font-size 16px
-    line-height 19px
+    set-font(16px, 19px)
     letter-spacing 0.04em
     color #F47821
     text-transform uppercase
@@ -34,8 +33,7 @@
     font-family "DINPro", "Arial", sans-serif
     font-style normal
     font-weight 400
-    font-size 18px
-    line-height @font-size * 1.25
+    set-font(18px, 18px * 1.25)
     letter-spacing -0.03em
     color #222222
 
@@ -68,3 +66,9 @@
       padding-right 70px
       padding-bottom 61px
       padding-left 60px
+
+    &__title
+      font-size 12px
+
+    &__text
+      set-font(24px, 24px * 1.25)
